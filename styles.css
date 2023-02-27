@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url(fonts/Coolvetica/coolvetica\ rg.otf);
+}
+
+@font-face {
+    font-family: CrimsionPro;
+    src: url(fonts/CrimsonPro/CrimsonPro-VariableFont_wght.ttf);
+}
+
+.bg-green{
+    background-color: #63A375;
+}
+
+.bg-brown{
+    background-color: #DE8F6E;
+}
+
+.bg-black{
+    background-color: #252627;
+}
+
+.bg-blue{
+    background-color: #1A535C;
+}
+
+.ft-Crimson{
+    font-family: CrimsonPro;
+}
+
+.ft-Coolvetica{
+    font-family: Coolvetica;
+}
+
+.mb-6{
+    margin-bottom: 5rem;
+
+}
+
+html,body,.container-fluid{
+    height: 100%;
+    background-color: #DE8F6E;
+    position: relative;
+}
+
+p{
+    font-family: CrimsonPro;
+    font-size: xx-large;
+}
+
+row{
+    position: relative;
+}
+
+col{
+    width: inherit;
+    height: inherit;
+}
+
+h1{
+    font-size: 100px;
+}
+
+header{
+    background-color: #1A535C !important;
+}
+
+nav{
+    opacity: 0;
+    background: rgba(255, 255, 255,0.8);
+    animation: fade-in 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+nav a{
+    font-family: Coolvetica;
+    font-size: large;
+}
+
+.navbar-brand{
+    font-size: xx-large;
+}
+
+.btn-sm{
+    background-color: #63A375;
+    color: #252627;
+}
+
+.btn-intro{
+    color: #1A535C;
+    font-size: 50px;
+    opacity: 0;
+    animation: fade-in 5s,bounce 2s linear 6s infinite;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+
+.btn-intro:hover{
+    color: white !important;
+}
+
+.intro-1{
+    margin-top: 0.2em;
+    animation: 3s slide-right !important;
+}
+
+.intro-2{
+    animation: 5s slide-left !important;
+    animation-delay: 2s;
+}
+
+.intro-3{
+    opacity: 0;
+    animation: fade-in 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+.intro-4{
+    opacity: 0;
+    animation: fade-in 5s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+.intro-5{
+    opacity: 0;
+    animation: fade-in 5s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+#main{
+    scroll-margin-top: 6rem;
+}
+
+@keyframes bounce{
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+
+    }
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -75%;
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+@keyframes slide-left {
+    from {
+        margin-right: -75%;
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+        margin-right: 0%;
+    }
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
