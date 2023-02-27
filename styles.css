@@ -34,7 +34,10 @@
 
 .mb-6{
     margin-bottom: 5rem;
+}
 
+.mt-6{
+    margin-top: 6rem;
 }
 
 html,body,.container-fluid{
@@ -44,7 +47,7 @@ html,body,.container-fluid{
 }
 
 p{
-    font-family: CrimsonPro;
+    font-family: monospace;
     font-size: xx-large;
 }
 
@@ -53,16 +56,30 @@ row{
 }
 
 col{
+    position: relative;
     width: inherit;
     height: inherit;
 }
+
+.email{
+    font-family: Coolvetica;
+
+    color: #252627;
+    font-size: xx-large;
+}
+
+    .email:hover{
+        color: #63A375;
+    }
 
 h1{
     font-size: 100px;
 }
 
-header{
-    background-color: #1A535C !important;
+footer{
+    background: rgba(255, 255, 255,0.8);
+    bottom: 0;
+    width: 100%;
 }
 
 nav{
@@ -73,10 +90,10 @@ nav{
     animation-fill-mode: forwards;
 }
 
-nav a{
-    font-family: Coolvetica;
-    font-size: large;
-}
+    nav a{
+        font-family: Coolvetica;
+        font-size: large;
+    }
 
 .navbar-brand{
     font-size: xx-large;
@@ -88,18 +105,35 @@ nav a{
 }
 
 .btn-intro{
+    background:none;
     color: #1A535C;
     font-size: 50px;
     opacity: 0;
     animation: fade-in 5s,bounce 2s linear 6s infinite;
     animation-delay: 6s;
     animation-fill-mode: forwards;
+    border: none;
+    outline: none;
 }
 
-
-.btn-intro:hover{
-    color: white !important;
+#btn-send{
+    font-size: xx-large;
+    background-color:#63A375;
+    opacity: 0.8;
 }
+
+.fa-github,.fa-linkedin{
+    color: #252627;
+}
+
+.btn:active{
+    outline: none;
+    border: none;
+}
+
+    .btn-intro:hover{
+        color: white !important;
+    }
 
 .intro-1{
     margin-top: 0.2em;
@@ -131,7 +165,11 @@ nav a{
 }
 
 #main{
+    margin-top: 10em;
+    margin-bottom: 6em;
+    padding: 2em;
     scroll-margin-top: 6rem;
+    height: fit-content;
 }
 
 @keyframes bounce{
