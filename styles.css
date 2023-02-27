@@ -218,3 +218,25 @@ nav{
         opacity: 1;
     }
 }
+
+/* https://css-tricks.com/bounce-element-around-viewport-in-css/ */
+
+.x {
+    animation: x 13s linear infinite alternate;
+  }
+  
+  .y {
+    animation: y 7s linear infinite alternate;
+  }
+  
+  @keyframes x {
+    100% {
+      transform: translateX( calc(100vw -100px) );
+    }
+  }
+  
+  @keyframes y {
+    100% {
+      transform: translateY( calc(100vh - 100px) );
+    }
+  }

@@ -1,4 +1,4 @@
-function validateForm() {
+function validateEmail() {
     var name =  document.getElementById('name').value;
     if (name == "") {
         document.querySelector('.status').innerHTML = "Name cannot be empty";
