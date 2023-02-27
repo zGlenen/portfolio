@@ -51,6 +51,11 @@ p{
     font-size: xx-large;
 }
 
+h3{
+    font-family: monospace;
+    font-size: xx-large;
+}
+
 row{
     position: relative;
 }
@@ -171,6 +176,22 @@ nav{
     scroll-margin-top: 6rem;
     height: fit-content;
 }
+
+.nav-link{
+    color: #252627;
+    font-family: Coolvetica;
+    font-size: larger;
+}
+
+    .nav-link:hover{
+        color: #63A375;
+    }
+
+    .skill-tab{
+        background-color: transparent;
+        border: 0 !important;
+        outline: none;
+    }
 
 @keyframes bounce{
     20%,50%,80%,to{
