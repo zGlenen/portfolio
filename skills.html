@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Zack's Skills</title>
 </head>
-<body>
+<body style="overflow: hidden;">
     <nav class="navbar navbar-expand-sm navbar-expand-sm navbar-light d-lg-flex align-items-center border-bottom mb-5 fixed-top" style="animation-delay: 0s !important;">
         <div class="container ">    
             <a class="navbar-brand" href="index.html">Zack Glenen</a>
@@ -23,10 +23,10 @@
                         <a class="nav-link text-dark f-coolvetica mx-3" href="work.html">Examples Of Work</a>
                     </li>
                     <li class="nav-item h-100 text-center">
-                        <a class="nav-link text-dark f-coolvetica mx-3" href="skills.html">Things I Can Do</a>
+                        <a class="nav-link text-dark f-coolvetica mx-3" href="skills.html">Things I Do</a>
                     </li>
                     <li class="nav-item h-100 text-center">
-                        <a class="nav-link text-dark f-coolvetica mx-3" href="contact.html">Contact</a>
+                        <a class="nav-link text-dark f-coolvetica mx-3" href="contact.html">Let's Chat</a>
                     </li>
                     <li class="nav-item h-100 mt-1 text-center">
                         <a class="btn btn-secondary btn-sm text-dark f-coolvetica mx-3" href="images/portrait.png" download>Resume Download</a>
@@ -36,75 +36,189 @@
         </div>
     </nav>
 
-    <div class="container-fluid mt-6 pt-5 row">
-        <div class="col-md-3">
-            <ul class="nav nav-tabs flex-column skill-tab" style="width: fit-content; position: fixed;">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#technical-skills" id="login-tab" data-bs-toggle="tab">Technical Skills</a>
+    <div class="container mt-6 pt-5 row gx-5" style="height: inherit;">
+        <div class="col-md-5">
+            <ul class="nav nav-tabs flex-column skill-tab" style="width: fit-content; position: relative;">
+                <li>
+                    <h3 class="nav-item text-sm">Click A Skill To Read More!</h3>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#operational-skills" id="register-tab" data-bs-toggle="tab">Soft Skills</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#languages" data-bs-toggle="dropdown">Languages & Frameworks</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c"data-bs-toggle="tab">C/C++</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c"data-bs-toggle="tab">Java</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c" data-bs-toggle="tab">C#</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c" data-bs-toggle="tab">Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c"data-bs-toggle="tab">JavaScript</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c" data-bs-toggle="tab">HTML/CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c" data-bs-toggle="tab">SQL</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c"data-bs-toggle="tab">PHP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c" data-bs-toggle="tab">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#c" data-bs-toggle="tab">.NET</a>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#other-skills" id="register-tab" data-bs-toggle="tab">Other Skills</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#technologies"data-bs-toggle="dropdown">Technologies</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="nav-link dropdown-toggle" href="#op" data-bs-toggle="dropdown">Operating Systems</a>
+                            <ul class="dropdown-submenu">
+                            <li class="dropdown-item">
+                                <h3>Linux</h3>
+                            </li>
+                            <li class="dropdown-item">
+                                <h3>Windows</h3>
+                            </li>
+                            <li class="dropdown-item">
+                                <h3>MAC OS</h3>
+                            </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#google" data-bs-toggle="tab">Google Workspace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#office"data-bs-toggle="tab">Microsoft Office</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#illustrator" data-bs-toggle="tab">Adobe Illustrator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#figma" data-bs-toggle="tab">Figma</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trello"data-bs-toggle="tab">Trello</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Soft Skills</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#time-management"data-bs-toggle="tab">Time Management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#leadership"data-bs-toggle="tab">Leadership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#communication" data-bs-toggle="tab">Communication</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team" data-bs-toggle="tab">Team Player</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other Skills</a>
+
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recording"data-bs-toggle="tab">Professional Recording Techniques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#document-writing"data-bs-toggle="tab">Professional Document Writing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Certifications</a>
+                            <ul class="dropdown-submenu">
+                                <li class="dropdown-item">
+                                    <h3>Forklift Certification</h3>
+                                </li>
+                                <li class="dropdown-item">
+                                    <h3>Emergency First Aid, Cpr, and AED</h3>
+                                </li>
+                                <li class="dropdown-item">
+                                    <h3>Occupational Health & Safety and WHMIS</h3>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
-        <div class="col-md-9">
-            <div class=" container tab-content">
-                <div id="technical-skills" class="tab-pane active">
-                  <h2 class="ft-Coolvetica">Languages & Frameworks</h2>
-                        <div class="container m-4">
-                            <h3>C/C++</h3>
-                            <h3>Java</h3>
-                            <h3>C#</h3>
-                            <h3>Python</h3>
-                            <h3>JavaScript</h3>
-                            <h3>HTML/CSS</h3>
-                            <h3>SQL</h3>
-                            <h3>PHP</h3>
-                            <h3>Laravel</h3>
-                            <h3>Bootstrap</h3>
-                            <h3 >.NET</h3>
-                        </div>
-                    <h2 class="ft-Coolvetica">Software</h2>
-                        <div class="container m-4">
-                            <h3>Linux</h3>
-                            <h3>Windows</h3>
-                            <h3>MAC OS</h3>
-                            <h3>Google Suit</h3>
-                            <h3>Microsoft Office</h3>
-                            <h3>Adobe Illustrator</h3>
-                            <h3>Figma</h3>
-                            <h3>Trello</h3>
-                        </div>
-
-                </div>
-                <div id="operational-skills" class="tab-pane fade">
-                        <div class="container m-4">
-                            <h3>Time Management</h3>
-                            <h3>Leadership</h3>
-                            <h3>Communication</h3>
-                            <h3>Team-Player</h3>
-                            <h3>Empathy</h3>
-                        </div>
-
-                </div>
-                <div id="other-skills" class="tab-pane fade">
-                  
-
-                    <div class="container m-4">
-                        <h3>Professional Recording Techniques</h3>
-                        <h3>Professional Document Writing</h3>
-                        <h3>Forklift Certification</h3>
-                        <h3>Emergency First Aid, Cpr, and AED</h3>
-                        <h3>Occupational Health & Safety and WHMIS</h3>
+        <div class="col-sm-5" style="height:inherit;">
+            <div class="row">
+                <div class="container tab-content">
+                    <div id="c" class="tab-pane">
+                        <p>These are the languages and frameworks I've learned in my career as an IT Professional thus far. 
+                            Please see the "Examples Of Work" tab above for an in-depth look at what I can acheive with these languages & frameworks. </p>
+                    </div>
+                    <div id="google" class="tab-pane">
+                        <p>I have a strong practical knowledge of the Google Workspace including but not limited to Drive, Docs, Sheets, Slides.</p>
+                    </div>
+                    <div id="office" class="tab-pane ">
+                        <p>I have a strong practical knowledge of the Microsoft Office including but not limited to One Drive, Teams, Word, Outlook.</p>
+                    </div>
+                    <div id="illustrator" class="tab-pane ">
+                        <p>I attended a professional graphic design course where a large portion was spent on Illustrator.
+                            I use this skill to create logos for any project I'm working on.
+                        </p>
+                    </div>
+                    <div id="figma" class="tab-pane">
+                        <p>Besides Illustrator, I do most of my designing in Figma. I use Figma for creating all of my low-fi and hi-fi wireframe for all projects.</p>
+                    </div>
+                    <div id="trello" class="tab-pane ">
+                        <p>I use Trello to track all tasks for any group effort I'm apart of.</p>
+                    </div>
+                    <div id="communication" class="tab-pane">
+                        <p>During my several years in post-secondary education, as well as in industry, I have developed a strong communication 
+                            skill.I'm an empathic listener and have an ability to easily bond with anyone. 
+                        </p>
+                    </div>
+                    <div id="time-management" class="tab-pane ">
+                        <p>While half of my career in the music industry was spent on site-managment, the other was spent on-stage as a tech.
+                            Here is where I honed my time-management skill. Whether it be writing and maintaining artist schedules, or simply 
+                            acheiving all necessary tasks before festival-end.
+                        </p>
+                    </div>
+                    <div id="leadership" class="tab-pane ">
+                        <p>Over the course of my involvement with events and festivals, I've assumed a leadership role. 
+                            This includes elements from overseeing several crew member to managing dozens of volunteers.</p>
+                    </div>
+                    <div id="team" class="tab-pane">
+                        <p>A festival is a well-oiled machine. It was integral for me to hone my team-working skill to progress in them.
+                            This is something I regard highly in myself.
+                        </p>
+                    </div>
+                    <div id="recording" class="tab-pane">
+                        <p>I studied Recording Arts at NSCC in 2016. There I cultivated a love for not only audio engineering, but creating my own music. Here is a song I co-wrote and recorded from that time.
+                            <audio class="" src="music/aBitterWorld.mp3" controls></audio>
+                        </p>
+                    </div>
+                    <div id="document-writing" class="tab-pane ">
+                        <p>While working in the Music Industry, I gained expertise in professional document writing. In 2017, I wrote and received a Music Nova Scotia mentoring grant.
+                            This helped my expenses as I got on-hands experience in the industry.
+                        </p>
                     </div>
                 </div>
             </div>
+            <div  style="height: 100%;" class="row align-content-end">
+                <img id="napoleon" class="img-responsive" src="images/nd.png">
+            </div>
+
         </div>
     </div>
-    <footer class="text-center ft-Coolvetica align-items-center mt-0" style="position: fixed;">
+
+    <footer class="text-center ft-Coolvetica align-items-center " style="position: fixed;" >
         <a href="https://github.com/zGlenen" target="_blank">
             <i class="fab fa-github fa-3x"></i>
         </a>
@@ -112,10 +226,6 @@
             <i class="fab fa-linkedin fa-3x"></i>
         </a>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-
-    
 </body>
 </html>
