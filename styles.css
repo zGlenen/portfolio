@@ -154,6 +154,13 @@ ul,li,.nav-item{
     font-family: Coolvetica !important;
 }
 
+#experience-secondary{
+    visibility: hidden !important;
+}
+#experience-main{
+    visibility: visible !important;
+   }
+
 /*tablet*/
 
 
@@ -187,6 +194,20 @@ ul,li,.nav-item{
     align-items: center;
     justify-content: center;
    }
+
+   #experience-main{
+    visibility: hidden !important;
+    width: 0;
+    height: 0;
+   }
+   #experience-secondary{
+    visibility: visible !important;
+   }
+   #sea-portrait{
+    margin-top:1em!important;
+    margin-left: 1em;
+    bottom: 0!important;
+    }   
 
 }
 
