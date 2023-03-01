@@ -161,6 +161,13 @@ ul,li,.nav-item{
     visibility: visible !important;
    }
 
+   #skills-secondary{
+    visibility: hidden !important;
+}
+#skills-main{
+    visibility: visible !important;
+   }
+
 /*tablet*/
 
 
@@ -202,6 +209,16 @@ ul,li,.nav-item{
    }
    #experience-secondary{
     visibility: visible !important;
+    margin-top: 1em !important;
+   }
+   #skills-main{
+    visibility: hidden !important;
+    width: 0;
+    height: 0;
+   }
+   #skills-secondary{
+    visibility: visible !important;
+    margin-top: 2em !important;
    }
    #sea-portrait{
     margin-top:1em!important;
