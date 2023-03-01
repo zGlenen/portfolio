@@ -41,7 +41,6 @@
 }
 
 html,body,.container-fluid{
-    min-width: 550px;
     height: 100%;
     background-color: #DE8F6E;
     position: relative;
@@ -71,16 +70,6 @@ col{
     white-space: normal;
 }
 
-.email{
-    font-family: Coolvetica;
-
-    color: #252627;
-    font-size: xx-large;
-}
-
-    .email:hover{
-        color: #63A375;
-    }
 
 h1{
     font-size: 80px;
@@ -95,8 +84,9 @@ footer{
 nav{
     opacity: 0;
     background: rgba(255, 255, 255,0.8);
+    max-height: 120px !important;
     animation: fade-in 2s;
-    animation-delay: 7s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -104,32 +94,15 @@ nav{
         font-family: Coolvetica;
         font-size: medium;
     }
+    .navbar-brand{
+        font-size: x-large;
+    }
 
-.navbar-brand{
-    font-size: x-large;
-}
+
 
 .btn-sm{
     background-color: #63A375;
     color: #252627;
-}
-
-.btn-intro{
-    background:none;
-    color: #1A535C;
-    font-size: 50px;
-    opacity: 0;
-    animation: fade-in 5s,bounce 2s linear 6s infinite;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-    border: none;
-    outline: none;
-}
-
-#btn-send{
-    font-size: xx-large;
-    background-color:#63A375;
-    opacity: 0.8;
 }
 
 .fa-github,.fa-linkedin{
@@ -141,55 +114,6 @@ nav{
     border: none;
 }
 
-    .btn-intro:hover{
-        color: white !important;
-    }
-
-.intro{
-    margin-top: 1em;
-}
-
-
-.intro-1{
-    margin-top: 0.1em;
-    animation: 3s slide-right !important;
-}
-
-.intro-2{
-    animation: 5s slide-left !important;
-    animation-delay: 2s;
-}
-
-.intro-3{
-    opacity: 0;
-    animation: fade-in 5s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-}
-.intro-4{
-    opacity: 0;
-    animation: fade-in 5s;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
-}
-.intro-5{
-    opacity: 0;
-    animation: fade-in 5s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-}
-
-#napoleon{
-    animation: slide-up 3s;
-}
-
-#main{
-    margin-top: 10em;
-    margin-bottom: 6em;
-    padding: 2em;
-    scroll-margin-top: 6rem;
-    height: fit-content;
-}
 
 ul,li,.nav-item{
     border: none !important;
@@ -207,11 +131,195 @@ ul,li,.nav-item{
         color: #63A375;
     }
 
-    .skill-tab{
-        background-color: transparent;
-        border: 0 !important;
-        outline: none;
+.skill-tab{
+    background-color: transparent;
+    border: 0 !important;
+    outline: none;
+}
+
+#navicon{
+    display: none;
+}
+
+.mobile-menu{
+    top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+}
+
+.text-dark{
+    font-family: Coolvetica !important;
+}
+
+/*tablet*/
+
+
+@media only screen and (max-width: 1000px){
+    #navicon{
+        display: block;
+        margin-right: 2em;
     }
+    nav li{
+        display: none;
+    }
+
+    h1{
+        font-size: xx-large;
+    }
+
+    #know-me{
+        display: none;
+    }
+
+   #main{
+    margin-top: 0 !important;
+   }
+
+   #main-music{
+    width: 100% !important;
+    margin-bottom: 1eM;
+   }
+
+   #about-me{
+    align-items: center;
+    justify-content: center;
+   }
+
+}
+
+/*Skill Page*/
+.long-col{
+    height: inherit;
+}
+
+#napoleon{
+    animation: slide-up 3s;
+}
+
+.nap-div{
+    height: 75%;
+}
+
+/*End Skill Page*/
+/*Work Page*/
+.samples-text{
+    font-size: medium;
+}
+
+.work-img{
+    width: 90%;
+}
+
+.bar{
+    background-color: 
+    white;height: 5px;
+}
+
+/*End Work Page*/
+
+    /*Experience Page*/
+#sea-portrait{
+    width: 90%; 
+    margin-top: 14em;
+}
+
+    /*End Experience Page*/
+    /*Main Page */
+
+.email{
+    font-family: Coolvetica;
+
+    color: #252627;
+    font-size: xx-large;
+}
+
+    .email:hover{
+        color: #63A375;
+    }
+.btn-intro{
+    background:none;
+    color: #1A535C;
+    font-size: 50px;
+    opacity: 0;
+    animation: fade-in 5s,bounce 2s linear 6s infinite;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    border: none;
+    outline: none;
+}
+
+.btn-intro:hover{
+    color: white !important;
+}
+
+#name{
+    color: white;
+}
+
+#main-music{
+    width: 75%;
+    position: relative;
+}
+
+#young-portrait{
+    width: inherit;
+}
+
+#portrait{
+    height: auto; 
+    width: 75%;
+}
+
+.intro{
+    margin-top: 3em;
+    padding: 14em;
+}
+
+
+.intro-1{
+    margin-top: 0.1em;
+    animation: 2s slide-right !important;
+}
+
+.intro-2{
+    animation: 5s slide-left !important;
+}
+
+.intro-3{
+    opacity: 0;
+    animation: fade-in 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+.intro-4{
+    opacity: 0;
+    animation: fade-in 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+.intro-5{
+    opacity: 0;
+    animation: fade-in 5s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+#main{
+    margin-top: 10em;
+    margin-bottom: 6em;
+    padding: 2em;
+    scroll-margin-top: 6rem;
+    height: fit-content;
+}
+
+/* End Main Page */
+
+
+
+/* Animation */
 
 @keyframes bounce{
     20%,50%,80%,to{
@@ -270,25 +378,3 @@ ul,li,.nav-item{
         opacity: 1;
     }
 }
-
-/* https://css-tricks.com/bounce-element-around-viewport-in-css/ */
-
-.x {
-    animation: x 13s linear infinite alternate;
-  }
-  
-  .y {
-    animation: y 7s linear infinite alternate;
-  }
-  
-  @keyframes x {
-    100% {
-      transform: translateX( calc(100vw -100px) );
-    }
-  }
-  
-  @keyframes y {
-    100% {
-      transform: translateY( calc(100vh - 100px) );
-    }
-  }

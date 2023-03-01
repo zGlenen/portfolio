@@ -7,48 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <title>Zack's Work</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-expand-sm navbar-light d-lg-flex align-items-center border-bottom mb-5 fixed-top" style="animation-delay: 0s !important;">
-        <div class="container ">
-            <a class="navbar-brand" href="index.html">Zack Glenen</a>
-            </button>
-            <div class="me-autojustify-content-end mt-2">
-                <ul class="navbar-nav me-auto flex-grow-1 ">
-                    <li class="nav-item h-100 text-center">
-                        <a class="nav-link text-dark f-coolvetica mx-3" href="index.html#main">About Me</a>
-                    </li>
-                    <li class="nav-item h-100 text-center">
-                        <a class="nav-link text-dark f-coolvetica mx-3" href="experience.html">Experience & Education</a>
-                    </li>
-                    <li class="nav-item h-100 text-center">
-                        <a class="nav-link text-dark f-coolvetica mx-3" href="work.html">Things I've Done</a>
-                    </li>
-                    <li class="nav-item h-100 text-center">
-                        <a class="nav-link text-dark f-coolvetica mx-3" href="skills.html">Things I Do</a>
-                    </li>
-                    <li class="nav-item h-100 text-center">
-                        <a class="nav-link text-dark f-coolvetica mx-3" href="contact.html">Let's Chat</a>
-                    </li>
-                    <li class="nav-item h-100 mt-1 text-center">
-                        <a class="btn btn-secondary btn-sm text-dark f-coolvetica mx-3" href="resume/zg_resume.pdf" download>Resume Download</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-section">
+        <script>
+            $(function(){$("#nav-section").load("nav.html") })
+        </script>
+    </div>
     <div class="container mt-6 ry-4">
-        <div class="row" style="background-color: white;height: 5px;"></div>
         <div class="row ry-4">
             <div class="col-md-6">
-                <h2 class="ft-Coolvetica">Convolution Reverb Project
-                    <a href="https://github.com/zGlenen/Wav_Convolution" target="_blank">
-                        <i class="fab fa-github fa-3x"></i>
-                    </a>
-                </h2>
+                <h2 class="ft-Coolvetica">
+                    <a href="https://github.com/zGlenen/Wav_Convolution" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                Convolution Reverb Project</h2>
                 <div class="container p-3">
-                    <p style="font-size: medium;">A before and after with a recording of me saying hello to my friend, Tom.
+                    <p class="samples-text" >A before and after with a recording of me saying hello to my friend, Tom.
                     Please see Github link above for code.</p>
                     <audio class="ft-Coolvetica" src="music/convolution_audio/hello_tom.wav" controls>Before</audio>
                     <audio class="ft-Coolvetica" src="music/convolution_audio/output.wav" controls>After</audio>
@@ -70,42 +46,58 @@
                 </p>
             </div>
         </div>
-        <div class="row" style="background-color: white;height: 5px;"></div>
+        <div class="row bar"></div>
         <div class="row ry-4 mt-5">
             <div class="col-md-6">
-
+                <h2 class="ft-Coolvetica">
+                    <a href="https://github.com/w0286403/EcosystemSimulation" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                    Ecosystem Simulation</h2>
+                <div class="container p-3">
+                    <p class="samples-text">A before and after of the city running for 1000 generations. Please
+                    see Github link above for code.</p>
+                    <img src="images/zombie_start.png" class="img-responsive work-img" >
+                    <img src="images/zombie_end.png" class="img-responsive work-img">
+                </div>
             </div>
             <div class="col-md-6">
-
+                <p><br>
+                    This Ecosystem Simulation was a final project for my Advanced Object Oriented Programming course. This simulation consists of 
+                    two types of organisms, humans and zombies circumnavigating a grid-like city.The zombies will eat humans if they
+                    see them. In a certain number of rounds, the humans will spawn other humans if they have survived, 
+                    and the zombies will convert back to humans if they have not eaten. The challenge here was to have the two organisms
+                    co-exist in the same space for a duration of 400 round without an extinction. 
+                </p>
+                <p>
+                    This project was challenging but most importantly, a blast to code. The trick to having both organisms survive is to
+                    have a programmed bias where one chooses how the zombies first spawn. Here, I forced the initial zombie spawn to be in the 
+                    seperate four quadrants to ensure that there would be no "zombie-wall" taking over the city. In the end I was able to have the 
+                    organisms survive for a TBD (perhaps infinite) amount of generations. 
+                </p>
             </div>
-            <p>ECOSYSTEM SIMULATION</p>
         </div>
-        <div class="row">
+        <div class="row bar" ></div>
+        <div class="row ry-4 mt-5">
             <div class="col-md-6">
-
+                <h2 class="ft-Coolvetica">
+                    <a href="https://github.com/NSCC-Winter-2023/assignment-1-zackglenen" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                    Word Processor</h2>
+                <div class="container p-3">
+                    <p class="samples-text">A terminal snippet for the word processor. Please see Github link above for code.</p>
+                    <img src="images/line_editor.png" class="img-responsive work-img" >
+                </div>
             </div>
             <div class="col-md-6">
-
+                <p><br>
+                    This word processor was a project under my current Data Structures course. The purpose is to create a command line
+                    text editor complete with insert, append, delete, list, and save functionality. The processor was built on top of 
+                    a my linked list data structure.
+                </p>
+                <p>
+                    The key to this project was to make each different aspect of it as reusable as possible. This means that throughout 
+                    my code, I've made methods that are completely self contained. The files themselves with a simple switch of data-type,
+                    could be reused for any number of future projects. 
+                </p>
             </div>
-            <p>WORD PROCESSOR</p>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-
-            </div>
-            <div class="col-md-6">
-
-            </div>
-            <p>ORDER APP</p>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-
-            </div>
-            <div class="col-md-6">
-
-            </div>
-            <p>YOURFOLIO</p>
         </div>
     </div>
     <footer class="text-center ft-Coolvetica align-items-center mt-0">
