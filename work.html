@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Zack's Portfolio</title>
+</head>
+<body>
+    <div id="nav-section">
+        <script>
+            $(function(){$("#nav-section").load("nav.html") })
+        </script>
+    </div>
+    <div class="container mt-6 ry-4">
+        <div class="row ry-4">
+            <a href="#work1" class="work-table"><h1>Convolution Reverb Project</h1></a>    
+            <a href="#work2" class="work-table"><h1>Ecosystem Simulation</h1></a>    
+            <a href="#work3" class="work-table"><h1>Word Processor</h1></a>    
+
+        </div>
+        <div class="row bar mt-6" id="work1"></div>
+        <div class="row ry-4 mt-5" >
+            <div class="col-md-6">
+                <h2 class="ft-Coolvetica">
+                    <a href="https://github.com/zGlenen/Wav_Convolution" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                Convolution Reverb Project</h2>
+                <div class="container p-3">
+                    <p class="samples-text" >A before and after with a recording of me saying hello to my friend, Tom.
+                    Please see Github link above for code.</p>
+                    <audio class="ft-Coolvetica" src="music/convolution_audio/hello_tom.wav" controls>Before</audio>
+                    <audio class="ft-Coolvetica" src="music/convolution_audio/output.wav" controls>After</audio>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p><br>
+                    In June 2022, I completed a 5-week work-term for a Maker Space based out of Sydney, Cape Breton.
+                    Their goal was to create a "practice microphone" that would plug into an I/O and have headphones out.
+                    The I/O was to be programmed with multiple effects such as delay, distortion, and compression, which 
+                    could be switched on and off as the user pleased. I was tasked with creating the reverb effect for the device.
+                </p>
+                <p>
+                    Convolution reverb consists of an impulse sample (a small recording of a clap in any room would do) and an input
+                    source merged together to artificially create the reverb of said room. My project is in C++ and I worked 
+                    off of an old repo the head engineer had. During my term, I researched how to break down audio files in
+                    C, fourier transformations, and digital signal processing. In the end, I merged many open-source audio processing 
+                    libraries together to acheive the end goal. The project took me the full 5 weeks to complete, finishing on the final day.
+                </p>
+            </div>
+        </div>
+        <div class="row bar" id="work2"></div>
+        <div class="row ry-4 mt-5" >
+            <div class="col-md-6">
+                <h2 class="ft-Coolvetica">
+                    <a href="https://github.com/w0286403/EcosystemSimulation" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                    Ecosystem Simulation</h2>
+                <div class="container p-3">
+                    <p class="samples-text">A before and after of the city running for 1000 generations. Please
+                    see Github link above for code.</p>
+                    <img src="images/zombie_start.png" class="img-responsive work-img" >
+                    <img src="images/zombie_end.png" class="img-responsive work-img">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p><br>
+                    This Ecosystem Simulation was a final project for my Advanced Object Oriented Programming course. This simulation consists of 
+                    two types of organisms, humans and zombies circumnavigating a grid-like city.The zombies will eat humans if they
+                    see them. In a certain number of rounds, the humans will spawn other humans if they have survived, 
+                    and the zombies will convert back to humans if they have not eaten. The challenge here was to have the two organisms
+                    co-exist in the same space for a duration of 400 round without an extinction. 
+                </p>
+                <p>
+                    This project was challenging but most importantly, a blast to code. The trick to having both organisms survive is to
+                    have a programmed bias where one chooses how the zombies first spawn. Here, I forced the initial zombie spawn to be in the 
+                    seperate four quadrants to ensure that there would be no "zombie-wall" taking over the city. In the end I was able to have the 
+                    organisms survive for a TBD (perhaps infinite) amount of generations. 
+                </p>
+            </div>
+        </div>
+        <div class="row bar" id="work3"></div>
+        <div class="row ry-4 mt-5" >
+            <div class="col-md-6">
+                <h2 class="ft-Coolvetica">
+                    <a href="https://github.com/NSCC-Winter-2023/assignment-1-zackglenen" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                    Word Processor</h2>
+                <div class="container p-3">
+                    <p class="samples-text">A terminal snippet for the word processor. Please see Github link above for code.</p>
+                    <img src="images/line_editor.png" class="img-responsive work-img" >
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p><br>
+                    This word processor was a project under my current Data Structures course. The purpose is to create a command line
+                    text editor complete with insert, append, delete, list, and save functionality. The processor was built on top of 
+                    a my linked list data structure.
+                </p>
+                <p>
+                    The key to this project was to make each different aspect of it as reusable as possible. This means that throughout 
+                    my code, I've made methods that are completely self contained. The files themselves with a simple switch of data-type,
+                    could be reused for any number of future projects. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer-section">
+        <script>
+            $(function(){$("#footer-section").load("footer.html") })
+        </script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

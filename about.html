@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Zack's Portfolio</title>
+</head>
+<body>
+    <div class="flex-wrapper">
+    <div id="nav-section">
+        <script>
+            $(function(){$("#nav-section").load("nav.html") })
+        </script>
+    </div>
+    <div class="container mt-6" id="main">
+        <div class="row gx-5">
+            <div class="col-sm-6 text-center" style="min-width: 300px;">
+                <img class="img-responsive" style="min-width: 300px;" id="portrait" src="images/portrait.png" />
+                <div class="container mt-3 text-center">
+                    <div class="row justify-content-center" style="width: auto;">
+                        <p style="font-size: large;height: auto;">A sample from my band, Blume. <i class="fa-solid fa-arrow-down"></i>
+                        </p>
+                        <audio class="mt-4" id="main-music" src="music/aBitterWorld.mp3" controls></audio>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-6 text-end" id="about-me">
+                <div class="row">
+                    <p>
+                        <span style="color: white;">Hi there, I'm Zack!</span> I'm an IT programmer based out of Halifax, Nova Scotia, practicing software 
+                        creation and indepth coding techniques. Previously, I was a self-employed Music Industry professional planning and executing festivals all 
+                        around the Maritimes. When I'm not working or studying, you can find me making music, reading novels, or shredding the streets on my bike.
+                    </p>
+                    <p class="text-end" id="about-me">Let's Chat!<br><a class=" email" href="zackglenen@gmail.com">zackglenen@gmail.com</a> </p>
+                </div>
+                <img class="img-responsive" id="young-portrait" src="images/young_portrait.png" />
+
+            </div>
+        </div>
+    </div>
+    <div id="footer-section">
+        <script>
+            $(function(){$("#footer-section").load("footer.html") })
+        </script>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

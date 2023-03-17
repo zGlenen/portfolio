@@ -1,0 +1,379 @@
+/*Site Classes*/
+@font-face {
+    font-family: Coolvetica;
+    src: url(fonts/Coolvetica/coolvetica\ rg.otf);
+}
+
+@font-face {
+    font-family: CrimsionPro;
+    src: url(fonts/CrimsonPro/CrimsonPro-VariableFont_wght.ttf);
+}
+
+.ft-Crimson{
+    font-family: CrimsonPro;
+}
+
+.ft-Coolvetica{
+    font-family: Coolvetica;
+}
+
+.bg-green{
+    background-color: #63A375;
+}
+
+.bg-brown{
+    background-color: #DE8F6E;
+}
+
+.bg-black{
+    background-color: #252627;
+}
+
+.bg-blue{
+    background-color: #1A535C;
+}
+
+.p-6{
+    padding-top: 6em;
+    padding-left: 14em;
+    padding-right: 14em;
+}
+
+.mt-6{
+    margin-top: 6em;
+}
+
+/*Site-Wide*/
+
+.flex-wrapper{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+html,body,.container-fluid{
+    height: 100%;
+    background-color: #DE8F6E;
+    position: relative;
+}
+
+h1{
+    font-size: 4em;
+    font-family: Coolvetica;
+}
+
+h3{
+    font-size: xx-large;
+    font-family: monospace;
+
+}
+
+p{
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.btn:active{
+    outline: none;
+    border: none;
+}
+
+    .btn-sm{
+        background-color: #63A375;
+        color: #252627;
+    }
+
+.text-dark{
+    font-family: Coolvetica !important;
+}
+
+footer{
+    margin-top: -1em;
+    position: relative !important;
+    background: rgba(255, 255, 255);
+    width: 100%;
+}
+    .fab{
+        color: #252627;
+    }
+
+/*Index*/
+
+.btn-intro{
+    background:none;
+    color: #1A535C;
+    font-size: 4em;
+    border: none;
+    outline: none;
+    opacity: 0;
+    animation: fade-in 5s,bounce 2s linear 6s infinite;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+    .btn-intro:hover{
+        color: white !important;
+    }
+
+.intro{
+    overflow: hidden;
+}
+
+    .intro-1{
+        animation: 2s slide-right !important;
+    }
+
+    .intro-2{
+        color: white;
+        animation: 6s slide-left !important;
+    }
+
+    .intro-3{
+        opacity: 0;
+        animation: fade-in 5s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+    .intro-4{
+        opacity: 0;
+        animation: fade-in 5s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    .intro-5{
+        opacity: 0;
+        animation: fade-in 5s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+
+/*About Me*/
+#young-portrait{
+    width: inherit;
+}
+
+#portrait{
+    height: auto; 
+    width: 75%;
+}
+
+.email{
+    color: #252627;
+    font-family: Coolvetica;
+    font-size: xx-large;
+}
+
+    .email:hover{
+        color: #63A375;
+    }
+
+/*Experience*/
+
+#experience-main{
+    visibility: visible !important;
+   }
+   #sea-portrait{
+        width: 90%; 
+        margin-top: 14em;
+    }
+    #experience-secondary{
+        visibility: hidden !important;
+    }
+    .skill-tab{
+        background-color: transparent;
+        border: 0 !important;
+        outline: none;
+    }
+    .footer-stuck{
+        position: fixed !important;
+    }
+
+/*Skills*/
+#skills-secondary{
+    visibility: hidden !important;
+}
+#skills-main{
+    visibility: visible !important;
+}
+#napoleon{
+    animation: slide-up 3s;
+}
+
+.nap-div{
+    height: 75%;
+    max-width: 550px;
+    min-width:350px
+}
+
+/*Work*/
+.samples-text{
+    font-size: medium;
+}
+
+.work-img{
+    width: 90%;
+}
+
+.bar{
+    background-color: 
+    white;height: 5px;
+}
+.work-table{
+    margin-top: 1em;
+    color: #252627;
+}
+    .work-table:hover{
+        color: #63A375;
+    }
+
+/*Navigation Menu*/
+
+nav{
+    background: rgba(255, 255, 255,0.8);
+}
+
+    nav a{
+        font-family: Coolvetica;
+        font-size: medium;
+    }
+    #navicon{
+        display: none;
+    }
+    .navbar-brand{
+        font-size: x-large;
+    }
+    .nav-link{
+        color: #252627;
+        font-family: Coolvetica;
+        font-size: large;
+    }
+    
+        .nav-link:hover{
+            color: #63A375;
+        }
+
+/*Responsive Design*/
+@media only screen and (max-width: 1000px){
+    #sea-portrait{
+        visibility: hidden;
+    }
+    .p-6{
+        padding-top: 6em;
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+    body{
+        overflow: visible;
+    }
+
+    #navicon{
+        display: block;
+        margin-right: 2em;
+    }
+    nav li{
+        display: none;
+    }
+    #experience-main{
+        visibility: hidden !important;
+        width: 0;
+        height: 0;
+       }
+       #experience-secondary{
+        visibility: visible !important;
+        margin-top: 1em !important;
+       }
+    #skills-main{
+    visibility: hidden !important;
+    width: 0;
+    height: 0;
+    }
+       #skills-secondary{
+        visibility: visible !important;
+        margin-top: 2em !important;
+       }
+}
+
+@media only screen and (max-width: 750px){
+
+    .p-6{
+        padding-top: 6em;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+    footer{
+        position:relative !important;
+    }
+    h1{
+        font-size: xx-large;
+    }
+    .btn-intro{
+        margin-top: 2em;
+        font-size: 2em;
+    }
+    #about-me{
+        margin-top: 2em;
+    }
+
+}
+
+
+
+/* Animation */
+@keyframes bounce{
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+
+    }
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -75%;
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+@keyframes slide-left {
+    from {
+        margin-right: -75%;
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+        margin-right: 0%;
+    }
+}
+@keyframes slide-up {
+    from {
+        margin-bottom: -100%;
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+        margin-bottom: 0%;
+    }
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
