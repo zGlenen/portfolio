@@ -70,6 +70,7 @@ h3{
 }
 
 p{
+    overflow-wrap: normal;
     font-family: monospace;
     font-size: x-large;
 }
@@ -313,6 +314,7 @@ nav{
     }
     #about-me{
         margin-top: 2em;
+        text-align: left !important;
     }
 
 }
