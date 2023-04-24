@@ -199,6 +199,7 @@ footer{
 }
 #napoleon{
     animation: slide-up 3s;
+    bottom: 0 !important;
 }
 
 .nap-div{
@@ -305,9 +306,13 @@ nav{
     footer{
         position:relative !important;
     }
-    h1{
-        font-size: xx-large;
+    .main-col{
+        text-align: center !important;
     }
+    h1{
+        font-size: 3em;
+    }
+
     .btn-intro{
         margin-top: 2em;
         font-size: 2em;
