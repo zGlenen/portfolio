@@ -200,6 +200,7 @@ footer{
 #napoleon{
     animation: slide-up 3s;
     bottom: 0 !important;
+    max-width: 400px;
 }
 
 .nap-div{
@@ -268,6 +269,9 @@ nav{
     body{
         overflow: visible;
     }
+    #napoleon{
+        position: fixed;
+    }
 
     #navicon{
         display: block;
@@ -321,6 +325,7 @@ nav{
         margin-top: 2em;
         text-align: left !important;
     }
+
 
 }
 
