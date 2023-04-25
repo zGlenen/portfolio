@@ -99,6 +99,10 @@ footer{
         color: #252627;
     }
 
+.fa-github:hover{
+    color: #63A375;
+}
+
 /*Index*/
 
 .btn-intro{
