@@ -10,6 +10,136 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Zack's Portfolio</title>
+    <style>
+        /*Index*/
+
+        .btn-intro{
+            background:none;
+            color: #1A535C;
+            font-size: 4em;
+            border: none;
+            outline: none;
+            opacity: 0;
+            animation: fade-in 2s,bounce 2s linear 6s infinite;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .btn-intro:hover{
+            color: white !important;
+        }
+
+        .intro{
+            overflow: hidden;
+        }
+
+            .intro-1{
+                animation: 1s slide-right !important;
+            }
+
+            .intro-2{
+                color: white;
+                animation: 1.5s slide-left !important;
+            }
+
+            .intro-3{
+                opacity: 0;
+                animation: fade-in 1s;
+                animation-delay: 0.5s;
+                animation-fill-mode: forwards;
+            }
+            .intro-4{
+                opacity: 0;
+                animation: fade-in 1s;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            }
+            .intro-5{
+                opacity: 0;
+                animation: fade-in 1s;
+                animation-delay: 1.5s;
+                animation-fill-mode: forwards;
+            }
+
+
+        @media only screen and (max-width: 750px){
+
+                h1{
+                    font-size: 1.5em;
+                }
+
+                .btn-intro{
+                    margin-top: 2em;
+                    font-size: 1.5em;
+                    color: #1A535C;
+                }
+
+                #titles{
+                    padding-top: 0px !important;
+                }
+
+                #know-me-row{
+                    margin-top: 0px !important;
+                }
+        }
+        @keyframes bounce{
+            20%,50%,80%,to{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            70%{
+                transform: translateY(-15px);
+            }
+            90%{
+                transform: translateY(-4px);
+
+            }
+        }
+
+        @keyframes slide-right {
+            from {
+                margin-left: -75%;
+                opacity: 0;
+            }
+        
+            to {
+                opacity: 1;
+                margin-left: 0%;
+            }
+        }
+        @keyframes slide-left {
+            from {
+                margin-right: -75%;
+                opacity: 0;
+            }
+        
+            to {
+                opacity: 1;
+                margin-right: 0%;
+            }
+        }
+        @keyframes slide-up {
+            from {
+                margin-bottom: -100%;
+                opacity: 0;
+            }
+        
+            to {
+                opacity: 1;
+                margin-bottom: 0%;
+            }
+        }
+        @keyframes fade-in{
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <div></div>
@@ -18,7 +148,7 @@
             $(function(){$("#nav-section").load("nav.html") })
         </script>
     </div>
-    <div class="container-fluid p-6 intro">    
+    <div class="container pt-6 intro">    
         <div class="row">
             <div class="col-md-6 main-col">
                 <h1 class="ft-Coolvetica intro-1">Hello,</h1>
@@ -27,39 +157,30 @@
                 <h1 class="ft-Coolvetica intro-2" id="name">I'm Zack Glenen.</h1>
             </div>
         </div>
-        <div class="row mt-4 pt-5">
-            <div class="col-md-5 main-col">
-                <h1 class="ft-Coolvetica intro-3">Programmer.</h1>
+        <div id="titles" class="pt-5">
+            <div class="row mt-4">
+                <div class="col-md-5 main-col">
+                    <h1 class="ft-Coolvetica intro-3">Programmer.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center main-col">
+                    <h1 class="ft-Coolvetica intro-4">Sound Engineer.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-end main-col">
+                    <h1 class="ft-Coolvetica intro-5">Developer.</h1>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center main-col">
-                <h1 class="ft-Coolvetica intro-4">Sound Engineer.</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-end main-col">
-                <h1 class="ft-Coolvetica intro-5">Developer.</h1>
-            </div>
-        </div>
-        <div class="row mt-3">
+        <div class="row mt-3" id="know-me-row">
             <div class="col-md-12 text-center main-col">
                 <a id="know-me" class="btn ft-Coolvetica btn-intro btn-lg" href="about.html">Get To Know Me!</a>
             </div>
         </div>
 
     </div>
-    <div id="footer-section">
-        <script>
-            $(function() {
-            $("#footer-section").load("footer.html", function() {
-                let height = $("#footer-section").outerHeight() + 16;
-                $("body").css("padding-bottom", height);
-            });
-            });
-        </script>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

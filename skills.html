@@ -9,38 +9,51 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Zack's Portfolio</title>
+    <style>
+        #napoleon{
+            animation: slide-up 3s;
+            
+            max-width: 400px;
+            z-index: 9999;
+        }
+
+        .nap-div{
+            margin-top: 0;
+            height: 75%;
+            max-width: 550px;
+            min-width:350px
+        }
+        .accordion-collapse{
+            background-color: rgba(255, 255, 255,0.8) !important;
+        }
+        .accordion-header button {
+            font-size: 1em;
+            color: #63A375 !important; /* Change to your desired color */
+        }
+
+
+
+
+
+    </style>
 </head>
-<body style="overflow: hidden;overflow-anchor: none;">
+<body >
     <div id="nav-section">
         <script>
             $(function(){$("#nav-section").load("nav.html") })
         </script>
     </div>
-    <div class="container mt-6 pt-5 row gx-5 long-col" id="skills-main">
-        <div class="col-md-4" style="height:101vh">
-            <ul class="nav nav-tabs flex-column skill-tab">
-                <li class="nav-item active">
-                    <a class="nav-link active" data-bs-target="#languages" data-bs-toggle="tab">Languages & Frameworks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#technologies"data-bs-toggle="tab">Technologies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#soft" data-bs-toggle="tab">Soft Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#other" data-bs-toggle="tab">Other Skills</a>
-                </li>
-            </ul>
-            <div class="row align-content-end nap-div">
-                <img id="napoleon" class="img-responsive" src="images/nd.png">
-            </div>
-        </div>
-
-        <div class="col-md-8" >
-            <div class="row">
-                <div class="col-sm-5 container tab-content">
-                    <div class="tab-pane fade active show" id="languages">
+    <div class="container mt-6 pt-5" id="skills-main">
+        <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-dark" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Languages, Frameworks & Technologies
+                </button>
+              </h1>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body row text-center">
+                    <div class="col-sm-4">
                         <ul class="nav nav-tabs flex-column" >
                             <li class="nav-item">
                                 <h3>C/C++</a>
@@ -61,6 +74,16 @@
                                 <h3>HTML/CSS</a>
                             </li>
                             <li class="nav-item">
+                                <h3>Flask</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>UI/UX Design</a>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="nav nav-tabs flex-column" >
+                            <li class="nav-item">
                                 <h3>SQL</a>
                             </li>
                             <li class="nav-item">
@@ -78,289 +101,168 @@
                             <li class="nav-item">
                                 <h3>React</a>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade " id="technologies">
-                        <ul class="nav nav-tabs flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#operating-sys" data-bs-toggle="tab">Operating Systems</a>
+                                <h3>XML</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#google" data-bs-toggle="tab">Google Workspace</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#office"data-bs-toggle="tab">Microsoft Office</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#illustrator" data-bs-toggle="tab">Adobe Illustrator</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#figma" data-bs-toggle="tab">Figma</a>    
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#trello"data-bs-toggle="tab">Trello</a>
+                                <h3>Database Management</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade " id="soft">
-                        <ul class="nav nav-tabs flex-column" >      
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#time-management"data-bs-toggle="tab">Time Management</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#leadership"data-bs-toggle="tab">Leadership</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#communication" data-bs-toggle="tab">Communication</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#team" data-bs-toggle="tab">Team Player</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade " id="other">
-                        <ul class="nav nav-tabs flex-column">      
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#recording"data-bs-toggle="tab">Professional Recording Techniques</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#document-writing"data-bs-toggle="tab">Professional Document Writing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#certifications" data-bs-toggle="tab">Certifications</a>
-                            </li> 
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-7 container tab-content">
-                    <div id="operating-sys" class="tab-pane">
+                    <div class="col-sm-4">
                         <ul class="nav nav-tabs flex-column" >
                             <li class="nav-item">
-                                <h3>Linux</h3>
+                                <h3>Mac OS</a>
                             </li>
                             <li class="nav-item">
-                                <h3>Windows</h3>
+                                <h3>Windows</a>
                             </li>
                             <li class="nav-item">
-                                <h3>MAC OS</h3>
+                                <h3>Linux</a>
                             </li>
-                        </ul>
-                    </div>
-                    <div id="certifications" class="tab-pane">
-                        <ul class="nav nav-tabs flex-column" >
-                        <li class="nav-item">
-                            <h3>Forklift Certification</h3>
-                        </li>
-                        <li class="nav-item">
-                            <h3>Emergency First Aid, Cpr, and AED</h3>
-                        </li>
-                        <li class="nav-item">
-                            <h3>Occupational Health & Safety and WHMIS</h3>
-                        </li>
-                    </ul>
-                    </div>
-                    <div id="google" class="tab-pane">
-                        <p>I have a strong practical knowledge of the Google Workspace including but not limited to Drive, Docs, Sheets, Slides.</p>
-                    </div>
-                    <div id="office" class="tab-pane ">
-                        <p>I have a strong practical knowledge of the Microsoft Office including but not limited to One Drive, Teams, Word, Outlook.</p>
-                    </div>
-                    <div id="illustrator" class="tab-pane ">
-                        <p>I attended a professional graphic design course where a large portion was spent on Illustrator.
-                            I use this skill to create logos for any project I'm working on.
-                        </p>
-                    </div>
-                    <div id="figma" class="tab-pane">
-                        <p>Besides Illustrator, I do most of my designing in Figma. I use Figma for creating all of my low-fi and hi-fi wireframe for all projects.</p>
-                    </div>
-                    <div id="trello" class="tab-pane ">
-                        <p>I use Trello to track all tasks for any group effort I'm apart of.</p>
-                    </div>
-                    <div id="communication" class="tab-pane">
-                        <p>During my several years in post-secondary education, as well as in industry, I have developed a strong communication 
-                            skill.I'm an empathic listener and have an ability to easily bond with anyone. 
-                        </p>
-                    </div>
-                    <div id="time-management" class="tab-pane ">
-                        <p>While half of my career in the music industry was spent on site-managment, the other was spent on-stage as a tech.
-                            Here is where I honed my time-management skill. Whether it be writing and maintaining artist schedules, or simply 
-                            acheiving all necessary tasks before festival-end.
-                        </p>
-                    </div>
-                    <div id="leadership" class="tab-pane ">
-                        <p>Over the course of my involvement with events and festivals, I've assumed a leadership role. 
-                            This includes elements from overseeing several crew member to managing dozens of volunteers.</p>
-                    </div>
-                    <div id="team" class="tab-pane">
-                        <p>A festival is a well-oiled machine. It was integral for me to hone my team-working skill to progress in them.
-                            This is something I regard highly in myself.
-                        </p>
-                    </div>
-                    <div id="recording" class="tab-pane">
-                        <p>I studied Recording Arts at NSCC in 2016. There I cultivated a love for not only audio engineering, but creating my own music. Here is a song I co-wrote and recorded from that time.
-                            <audio class="" src="music/empire.mp3" controls></audio>
-                        </p>
-                    </div>
-                    <div id="document-writing" class="tab-pane ">
-                        <p>While working in the Music Industry, I gained expertise in professional document writing. In 2017, I wrote and received a Music Nova Scotia mentoring grant.
-                            This helped my expenses as I got on-hands experience in the industry.
-                        </p>
+                            <li class="nav-item">
+                                <h3>Office / Workspace</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>Adobe Illustrator</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>Figma</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>Trello</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>Version Control</a>
+                            </li>
+                        </ul>    
                     </div>
                 </div>
-
+              </div>
             </div>
-        </div>
-    </div>
-
-    <div class="container text-center dropdown" id="skills-secondary">
-
-            <ul class="nav nav-tabs flex-column skill-tab">
-                <h3>Click To Read More!</h3>
-                <li class="nav-item ">
-                    <a class="nav-link" data-bs-target="#languages" data-bs-toggle="dropdown">Languages & Frameworks</a>
-                    <div class="dropdown-menu" id="languages" style="width: fit-content;">
-                        <ul class="nav nav-tabs flex-column" >
-                            <li class="dropdown-item">
-                                <h3>C/C++</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>Java</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>C#</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>Python</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>JavaScript</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>HTML/CSS</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>SQL</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>PHP</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>Bootstrap</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>Laravel</h3>
-                            </li>
-                            <li class="dropdown-item">
-                                <h3>.NET</h3>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#technologies"data-bs-toggle="dropdown">Technologies</a>
-                    <div class="dropdown-menu" id="technologies">
-                        <ul class="nav nav-tabs flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#operating-sys" data-bs-toggle="dropdown">Operating Systems</a>
-                                <div id="operating-sys" class="dropdown-submenu">
-                                    <ul class="nav nav-tabs flex-column" >
-                                        <li class="dropdown-item">
-                                            <h3>Linux</h3>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <h3>Windows</h3>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <h3>MAC OS</h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Google Workspace</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" >Microsoft Office</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Adobe Illustrator</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Figma</a>    
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" >Trello</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#soft" data-bs-toggle="dropdown">Soft Skills</a>
-                    <div class="dropdown-menu" id="soft">
-                        <ul class="nav nav-tabs flex-column" >      
-                            <li class="nav-item">
-                                <a class="nav-link">Time Management</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Leadership</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Communication</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Team Player</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header text-dark" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Soft Skills
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body row text-center">
                     
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#other" data-bs-toggle="dropdown">Other Skills</a>
-                    <div class="dropdown-menu" id="other" style="max-width: 350px;">
-                        <ul class="nav nav-tabs flex-column">      
+                        <div class="col-sm-4">
+                            <ul class="nav nav-tabs flex-column" >
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#recording"data-bs-toggle="tab">Professional Recording Techniques</a>
+                                <h3>Leadership</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#document-writing"data-bs-toggle="tab">Professional Document Writing</a>
+                                <h3>Time Management</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-target="#certifications" data-bs-toggle="tab">Certifications</a>
-                                <div id="certifications" class="dropdown-submenu" style="word-wrap: break-word !important;">
-                                    <ul class="nav nav-tabs flex-column" >
-                                    <li class="dropdown-item">
-                                        <p style="word-wrap: break-word;white-space: normal!important;">Forklift Certification</p>
-                                    </li>
-                                    <li style="word-wrap: break-word!important;" class="dropdown-item">
-                                        <p style="word-wrap: break-word;white-space: normal!important;">Emergency First Aid, Cpr, and AED</p>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <p style="word-wrap: break-word;white-space: normal!important;">Occupational Health & Safety and WHMIS</p>
-                                    </li>
-                                </ul>
-                                </div>
-                            </li> 
+                                <h3>Communication</a>
+                            </li>
                         </ul>
-                    </div>
-                </li>
-            </ul>
-            <div class="row align-content-end nap-div">
-                <img id="napoleon" class="img-responsive" src="images/nd.png"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="nav nav-tabs flex-column" >
+                            <li class="nav-item">
+                                <h3>Dependable</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>Adaptability</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>Critical Thinking</a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="nav nav-tabs flex-column" >
+                            <li class="nav-item">
+                                <h3>Problem Solving</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>Emotional Intelligence</a>
+                            </li>
+                            <li class="nav-item">
+                                <h3>Teamwork</a>
+                            </li>
+                        </ul>
+                        </div>  
+                </div>
+              </div>
             </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header text-dark" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Work & Education
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Rockbound Productions - 2018/Present</a>
+                                <p>
+                                    I've been working with Rockound Productions since 2017. Throughout my time there,
+                                    I've mentored under multiple people, and worked many different events and festivals as a tech. While my duties would 
+                                    vary for every gig, they include stage managing, being a backline technician,
+                                    live sound, and set-up & tear-down of all technical equipment.
+                                </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>IT Programming - NSCC 2021/2023</a>
+                                <p>
+                                    During the pandemic, I tried an abundance of different hobbies, one being computer programming. This is where my love for
+                                    coding bloomed, and I decided to go back to school to follow it. In this course, I studied the creation of software, writing practical and effectual code,
+                                    and following of established design and programming standards.
+                                </p>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Halifax Jazz Festival - 2018/Present</a>
+                                <p> 
+                                    During my time with Halifax Jazz Festival, I've assumed multiple roles. Currently, I am a Site & Logistics
+                                    manager. My duties include set-up & tear-down of entire site, working with vendors and other teams to accomplish
+                                    their needs, and leading volunteer and labour crews.
+                                </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Music Business - NSCC 2017/2018</a>
+                                <p>
+                                    Back-to-back with Recording Arts, I attended Music Business to be more well-rounded and to get a better understanding of the Music Industry.
+                                    Here I studied all business aspects of the industry including grant-writing, marketing plans, artist management and festival planning among other subjects. 
+                                </p>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>Event Industry Professional - 2018/Present</a>
+                                <p>
+                                    Since 2018, I've been a self-employed event professional. This means that many folks, businesses, and events 
+                                    around the maritimes would hire me to help manage what they need. This could be from helping a local brewery 
+                                    run their on-site events, to heading out to Magnetic Hill to work on the headlining summer concert.
+                                </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Recording Arts - NSCC 2016/2017</a>
+                                <p>
+                                    I attended this course straight out of high-school with a drive to be apart of any music scene. Here, I studied 
+                                    multiple aspects of professional recording techniques such as mixing, mastering, post-production and producing. During
+                                    my year, I cultivated a strong love for technology and how it can manipulate music.
+                                 </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+        </div>
 
     </div>
-    <div id="footer-section">
-        <script>
-            $(function() {
-            $("#footer-section").load("footer.html", function() {
-                let height = $("#footer-section").outerHeight() + 16;
-                $("body").css("padding-bottom", height);
-            });
-            });
-        </script>
     </div>
-
+    <div class="row align-content-end nap-div">
+        <img id="napoleon" class="img-responsive" src="images/nd_shrt.png"/>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

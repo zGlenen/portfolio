@@ -39,6 +39,10 @@
     padding-right: 14em;
 }
 
+.pt-6{
+    padding-top: 6em;
+}
+
 .mt-6{
     margin-top: 6em;
 }
@@ -89,129 +93,18 @@ p{
     font-family: Coolvetica !important;
 }
 
-footer{
-    margin-top: -1em;
-    position: relative !important;
-    background: rgba(255, 255, 255);
-    width: 100%;
-}
-    .fab{
-        color: #252627;
-    }
 
-.fa-github:hover{
-    color: #63A375;
-}
-
-/*Index*/
-
-.btn-intro{
-    background:none;
-    color: #1A535C;
-    font-size: 4em;
-    border: none;
-    outline: none;
-    opacity: 0;
-    animation: fade-in 5s,bounce 2s linear 6s infinite;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-}
-
-    .btn-intro:hover{
-        color: white !important;
-    }
-
-.intro{
-    overflow: hidden;
-}
-
-    .intro-1{
-        animation: 2s slide-right !important;
-    }
-
-    .intro-2{
-        color: white;
-        animation: 6s slide-left !important;
-    }
-
-    .intro-3{
-        opacity: 0;
-        animation: fade-in 5s;
-        animation-delay: 3s;
-        animation-fill-mode: forwards;
-    }
-    .intro-4{
-        opacity: 0;
-        animation: fade-in 5s;
-        animation-delay: 4s;
-        animation-fill-mode: forwards;
-    }
-    .intro-5{
-        opacity: 0;
-        animation: fade-in 5s;
-        animation-delay: 5s;
-        animation-fill-mode: forwards;
-    }
-
-/*About Me*/
-#young-portrait{
-    width: inherit;
-}
-
-#portrait{
-    height: auto; 
-    width: 75%;
-}
-
-.email{
+.fab{
     color: #252627;
-    font-family: Coolvetica;
-    font-size: xx-large;
+    font-size: 1.5em !important;
 }
 
-    .email:hover{
-        color: #63A375;
-    }
-
-/*Experience*/
-
-#experience-main{
-    visibility: visible !important;
-   }
-   #sea-portrait{
-        width: 90%; 
-        margin-top: 14em;
-    }
-    #experience-secondary{
-        visibility: hidden !important;
-    }
-    .skill-tab{
-        background-color: transparent;
-        border: 0 !important;
-        outline: none;
-    }
-    .footer-stuck{
-        position: fixed !important;
-    }
-
-/*Skills*/
-#skills-secondary{
-    visibility: hidden !important;
-}
-#skills-main{
-    visibility: visible !important;
-}
-#napoleon{
-    animation: slide-up 3s;
-    bottom: 0 !important;
-    max-width: 400px;
+.gr_hl:hover{
+    color: #63A375 !important;
+    text-decoration: none !important;
 }
 
-.nap-div{
-    height: 75%;
-    max-width: 550px;
-    min-width:350px
-}
+
 
 /*Work*/
 .samples-text{
@@ -242,7 +135,7 @@ nav{
 
     nav a{
         font-family: Coolvetica;
-        font-size: medium;
+        font-size: x-large !important;
     }
     #navicon{
         display: none;
@@ -261,7 +154,7 @@ nav{
         }
 
 /*Responsive Design*/
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 991px){
     #sea-portrait{
         visibility: hidden;
     }
@@ -284,24 +177,7 @@ nav{
     nav li{
         display: none;
     }
-    #experience-main{
-        visibility: hidden !important;
-        width: 0;
-        height: 0;
-       }
-       #experience-secondary{
-        visibility: visible !important;
-        margin-top: 1em !important;
-       }
-    #skills-main{
-    visibility: hidden !important;
-    width: 0;
-    height: 0;
-    }
-       #skills-secondary{
-        visibility: visible !important;
-        margin-top: 2em !important;
-       }
+
 }
 
 @media only screen and (max-width: 750px){
@@ -318,78 +194,15 @@ nav{
         text-align: center !important;
     }
     h1{
-        font-size: 3em;
+        font-size: 1.5em;
     }
 
-    .btn-intro{
-        margin-top: 2em;
-        font-size: 2em;
-    }
+
     #about-me{
         margin-top: 2em;
         text-align: left !important;
     }
 
 
-}
 
-
-
-/* Animation */
-@keyframes bounce{
-    20%,50%,80%,to{
-        transform: translateY(0);
-    }
-    40%{
-        transform: translateY(-30px);
-    }
-    70%{
-        transform: translateY(-15px);
-    }
-    90%{
-        transform: translateY(-4px);
-
-    }
-}
-
-@keyframes slide-right {
-    from {
-        margin-left: -75%;
-        opacity: 0;
-    }
-  
-    to {
-        opacity: 1;
-        margin-left: 0%;
-    }
-}
-@keyframes slide-left {
-    from {
-        margin-right: -75%;
-        opacity: 0;
-    }
-  
-    to {
-        opacity: 1;
-        margin-right: 0%;
-    }
-}
-@keyframes slide-up {
-    from {
-        margin-bottom: -100%;
-        opacity: 0;
-    }
-  
-    to {
-        opacity: 1;
-        margin-bottom: 0%;
-    }
-}
-@keyframes fade-in{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
